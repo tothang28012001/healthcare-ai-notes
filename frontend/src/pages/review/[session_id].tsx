@@ -32,7 +32,7 @@ const ReviewPage: React.FC = () => {
   useEffect(() => {
     if (!session_id) return;
 
-    fetch(`http://127.0.0.1:8000/notes/${session_id}`)
+    fetch(`https://healthcare-ai-notes.onrender.com/notes/${session_id}`)
       .then(res => {
         if (!res.ok) throw new Error("Note not found");
         return res.json();
@@ -64,7 +64,7 @@ const ReviewPage: React.FC = () => {
     if (!note || !session_id) return;
     setSaveStatus('Saving...');
     try {
-      const res = await fetch(`http://127.0.0.1:8000/notes/${session_id}`, {
+      const res = await fetch(`https://healthcare-ai-notes.onrender.com/notes/${session_id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(note)
@@ -83,7 +83,7 @@ const ReviewPage: React.FC = () => {
     if (!confirm("Are you sure you want to approve this note? This will lock the status.")) return;
     
     try {
-      const res = await fetch(`http://127.0.0.1:8000/notes/${session_id}/approve`, { method: 'POST' });
+      const res = await fetch(`https://healthcare-ai-notes.onrender.com/notes/${session_id}/approve`, { method: 'POST' });
       if (!res.ok) throw new Error("Failed to approve");
       
       // Update local state immediately
@@ -100,7 +100,7 @@ const ReviewPage: React.FC = () => {
     
     try {
       // 1. Trigger Generation (POST) to ensure latest version exists
-      const genRes = await fetch(`http://127.0.0.1:8000/export/${session_id}`, { method: 'POST' });
+      const genRes = await fetch(`https://healthcare-ai-notes.onrender.com/export/${session_id}`, { method: 'POST' });
       if (!genRes.ok) {
         const text = await genRes.text();
         throw new Error(`Generation failed: ${text}`);
@@ -108,7 +108,7 @@ const ReviewPage: React.FC = () => {
 
       // 2. Trigger Download (GET)
       // We perform a fetch to get the 'blob' (binary data)
-      const downloadRes = await fetch(`http://127.0.0.1:8000/export/${session_id}/download`, { method: 'GET' });
+      const downloadRes = await fetch(`https://healthcare-ai-notes.onrender.com/export/${session_id}/download`, { method: 'GET' });
       
       if (!downloadRes.ok) throw new Error("Download failed");
 
