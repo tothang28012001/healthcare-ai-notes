@@ -51,8 +51,8 @@ async def rate_limit_middleware(request: Request, call_next):
 # Configure CORS (Restrictive)
 app.add_middleware(
     CORSMiddleware,
-    # REMOVE the slash at the end
-    allow_origins=["*"], 
+    # Allow ANY URL ending in .vercel.app
+    allow_origin_regex="https://.*\.vercel\.app", 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
