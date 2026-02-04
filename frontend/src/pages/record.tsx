@@ -91,18 +91,18 @@ export default function RecordPage() {
       }
       formData.append("consent", "true");
       
-      const upRes = await fetch('https://healthcare-ai-notes.onrender.com//upload-audio', { method: 'POST', body: formData });
+      const upRes = await fetch('https://healthcare-ai-notes.onrender.com/upload-audio', { method: 'POST', body: formData });
       if (!upRes.ok) throw new Error("Upload failed");
       const { session_id } = await upRes.json();
 
       setProgressStep(2);
-      await fetch(`https://healthcare-ai-notes.onrender.com//transcribe/${session_id}`, { method: 'POST' });
+      await fetch(`https://healthcare-ai-notes.onrender.com/transcribe/${session_id}`, { method: 'POST' });
 
       setProgressStep(3);
-      await fetch(`https://healthcare-ai-notes.onrender.com//clean-transcript/${session_id}`, { method: 'POST' });
+      await fetch(`https://healthcare-ai-notes.onrender.com/clean-transcript/${session_id}`, { method: 'POST' });
 
       setProgressStep(4);
-      await fetch(`https://healthcare-ai-notes.onrender.com//extract-notes/${session_id}`, { method: 'POST' });
+      await fetch(`https://healthcare-ai-notes.onrender.com/extract-notes/${session_id}`, { method: 'POST' });
 
       router.push(`/review/${session_id}`);
 
