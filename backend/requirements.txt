@@ -5,4 +5,4 @@ pydantic>=2.6.0
 python-multipart>=0.0.9
 groq>=0.9.0
 reportlab>=4.0.9
-cryptography>=42.0.0  <-- This is likely the one causing the crash
+cryptography>=42.0.0
