@@ -15,7 +15,7 @@ export default function Dashboard() {
 
   const fetchSessions = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/sessions');
+      const res = await fetch('https://healthcare-ai-notes.onrender.com/sessions');
       const data = await res.json();
       setSessions(data.sessions || []);
     } catch (error) {
