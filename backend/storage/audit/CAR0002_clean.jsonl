@@ -1,1 +1,0 @@
-{"event_id": "1c716f86-a514-4a45-b1b6-fcad9a210b63", "session_id": "CAR0002_clean", "event_type": "DATA_RETENTION_CLEANUP", "timestamp": "2026-02-04T02:44:21.182749", "actor": "system", "details": {"file": "transcripts/CAR0002_clean.txt", "reason": "Older than 7 days"}}

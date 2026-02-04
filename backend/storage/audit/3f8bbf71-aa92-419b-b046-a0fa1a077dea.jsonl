@@ -1,1 +1,0 @@
-{"event_id": "807fa2d1-465b-432f-85b6-55092924c6b5", "session_id": "3f8bbf71-aa92-419b-b046-a0fa1a077dea", "event_type": "DATA_RETENTION_CLEANUP", "timestamp": "2026-01-25T19:33:53.883716", "actor": "system", "details": {"file": "audio/3f8bbf71-aa92-419b-b046-a0fa1a077dea.webm", "reason": "Older than 1 days"}}

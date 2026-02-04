@@ -1,2 +1,0 @@
-{"event_id": "53f5cfd2-3ab6-4393-aeca-61107c3bbfe8", "session_id": "b8dc5ae4-7ffb-4849-bbc4-6764232654d1", "event_type": "AUDIO_UPLOADED", "timestamp": "2026-02-04T02:59:56.163429", "actor": "system", "details": {"consent_obtained": true, "encryption_enabled": true}}
-{"event_id": "1b08ab25-36e2-4f41-9a10-a8f8658b1b92", "session_id": "b8dc5ae4-7ffb-4849-bbc4-6764232654d1", "event_type": "TRANSCRIPTION_COMPLETED", "timestamp": "2026-02-04T03:00:08.362279", "actor": "system", "details": {"model": "whisper-large-v3"}}

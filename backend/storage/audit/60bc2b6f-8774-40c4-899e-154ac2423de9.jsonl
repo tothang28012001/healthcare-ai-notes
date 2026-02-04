@@ -1,1 +1,0 @@
-{"event_id": "909d8ba1-16e4-4f85-8cdd-a96deb4b112c", "session_id": "60bc2b6f-8774-40c4-899e-154ac2423de9", "event_type": "DATA_RETENTION_CLEANUP", "timestamp": "2026-02-04T02:44:21.180748", "actor": "system", "details": {"file": "transcripts/60bc2b6f-8774-40c4-899e-154ac2423de9.json", "reason": "Older than 7 days"}}
