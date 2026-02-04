@@ -51,10 +51,10 @@ async def rate_limit_middleware(request: Request, call_next):
 # Configure CORS (Restrictive)
 app.add_middleware(
     CORSMiddleware,
-    # REMOVE the slash at the end
-    allow_origins=["https://healthcare-ai-notes.vercel.app"], 
+    # CHANGE THIS: Allow all origins regex OR list specific ones
+    allow_origin_regex="https://.*\.vercel\.app",  # Allows ANY Vercel app
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"], 
+    allow_methods=["*"], 
     allow_headers=["*"],
 )
 
