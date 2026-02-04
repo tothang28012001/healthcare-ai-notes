@@ -1,0 +1,4 @@
+SYSTEM PROMPT PLACEHOLDER
+
+Role: Medical Scribe
+Task: Extract structured notes (SOAP format) from the provided transcript.

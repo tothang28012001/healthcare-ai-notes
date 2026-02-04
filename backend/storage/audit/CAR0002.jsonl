@@ -1,0 +1,2 @@
+{"event_id": "1f9f14bf-44be-46d1-8f32-a602ffea8074", "session_id": "CAR0002", "event_type": "DATA_RETENTION_CLEANUP", "timestamp": "2026-01-25T19:33:53.884715", "actor": "system", "details": {"file": "audio/CAR0002.mp3", "reason": "Older than 1 days"}}
+{"event_id": "c4833686-983d-4ed1-91ea-019f40c58b37", "session_id": "CAR0002", "event_type": "DATA_RETENTION_CLEANUP", "timestamp": "2026-02-04T02:44:21.181748", "actor": "system", "details": {"file": "transcripts/CAR0002.json", "reason": "Older than 7 days"}}

@@ -1,0 +1,3 @@
+{"event_id": "583f916d-c21b-415d-8d6d-6281b9c4b1ae", "session_id": "5da89294-8a2c-4d2a-bfea-a932c5a10ffb", "event_type": "AUDIO_UPLOADED", "timestamp": "2026-02-04T03:03:14.875113", "actor": "system", "details": {"consent_obtained": true, "encryption_enabled": true}}
+{"event_id": "891d6228-b162-4807-af0c-53b4d30bed35", "session_id": "5da89294-8a2c-4d2a-bfea-a932c5a10ffb", "event_type": "TRANSCRIPTION_COMPLETED", "timestamp": "2026-02-04T03:03:17.302497", "actor": "system", "details": {"model": "whisper-large-v3"}}
+{"event_id": "4c8f503b-f4eb-4153-a301-8ee3301200cf", "session_id": "5da89294-8a2c-4d2a-bfea-a932c5a10ffb", "event_type": "TRANSCRIPT_CLEANED", "timestamp": "2026-02-04T03:03:18.600273", "actor": "system", "details": {}}
